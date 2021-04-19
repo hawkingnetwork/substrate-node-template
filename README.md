@@ -182,4 +182,7 @@ by appending your own. A few useful ones are as follow.
 
 # Check whether the code is compilable
 ./scripts/docker_run.sh cargo check
+
+# Run custom chain spec
+./scripts/docker_run.sh ./target/release/node-template --chain ./customSpecRaw.json --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' --validator --name HawkNode_01 --base-path /tmp/hawknode_01 --unsafe-ws-external --unsafe-ws-external --unsafe-rpc-external --rpc-cors all
 ```
