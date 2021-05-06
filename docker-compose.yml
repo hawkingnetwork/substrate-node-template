@@ -1,9 +1,12 @@
 version: "3.2"
-
 services:
   dev:
     container_name: node-template
-    image: paritytech/ci-linux:974ba3ac-20201006
+    image: paritytech/ci-linux:3d903bdd-20210416
+    deploy:
+      resources:
+        limits:
+          memory: 2000M
     working_dir: /var/www/node-template
     ports:
       - "9944:9944"
