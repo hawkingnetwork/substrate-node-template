@@ -6,7 +6,7 @@ services:
     deploy:
       resources:
         limits:
-          memory: 2000M
+          memory: 3000M
     working_dir: /var/www/node-template
     ports:
       - "9944:9944"
