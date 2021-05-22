@@ -3607,6 +3607,7 @@ dependencies = [
  "pallet-grandpa",
  "pallet-im-online",
  "pallet-offences",
+ "pallet-private-sales",
  "pallet-randomness-collective-flip",
  "pallet-session",
  "pallet-staking",
@@ -4038,6 +4039,22 @@ dependencies = [
  "parity-scale-codec",
  "sp-runtime",
  "sp-staking",
+ "sp-std",
+]
+
+[[package]]
+name = "pallet-private-sales"
+version = "3.0.0"
+dependencies = [
+ "frame-benchmarking",
+ "frame-support",
+ "frame-system",
+ "pallet-balances",
+ "parity-scale-codec",
+ "serde",
+ "sp-core",
+ "sp-io",
+ "sp-runtime",
  "sp-std",
 ]
 
